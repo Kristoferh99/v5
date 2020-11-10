@@ -1,0 +1,347 @@
+@import "./ad";
+
+
+body {
+    background-color: #c0c0c0;
+    margin: 0;
+    padding: 0;
+}
+header {
+    margin: 0 auto;
+    padding: 0%;
+}
+
+img.selja {
+    max-width: 100%;
+    max-height: fit-content;
+    position: relative;
+}
+
+.mid {
+    width: 100%;
+    height: 100%;
+    background-image: url(golf.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    margin-top: 0;
+    padding-top: 0;
+    color: #c8362e;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 1px 1px 1px #ff0000;
+}
+
+.gallery h2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.gallery p {
+    color: red;
+    padding: 3px;
+}
+text {
+    color: yellow;
+}
+
+.info {
+    background-color: #c0c0c0;
+    margin: 0;
+    min-width: 100%;
+    min-height: 100%;
+    display: inline-grid;
+    justify-content: center;
+}
+
+input {
+    align-items: center;
+    right: 50%;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: #c0c0c0;
+    cursor: text;
+    margin: 0em;
+    font: "Montserrat", sans-serif;
+    padding: 10px;
+    border-width: 0 0 2px;
+    border-style: outset;
+    border-color: -internal-dark(rgb(118, 118, 118));
+    border-image: initial;
+}
+input#subb {
+    background-color: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: cell;
+}
+
+table {
+    width: 100%;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+label {
+    font-family: "Montserrat", sans-serif;
+}
+p {
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+}
+@media screen and (min-width: 600px) {
+    nav {
+        text-align: center;
+        background-color: rgb(124, 124, 124);
+        max-width: 100%;
+        width: 100%;
+        height: 50px;
+        padding: 0;
+        margin: 0%;
+    }
+
+    ul li {
+        display: inline;
+        padding: 5px;
+        text-align: center;
+        width: 100%;
+        left: -5px;
+    }
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        font-family: "Saira Stencil One", cursive;
+    }
+    .gallery {
+        background-color: #c0c0c0;
+        margin: 0;
+        min-width: 100%;
+        min-height: 100%;
+        display: inline-grid;
+        justify-content: center;
+    }
+
+    .c1 {
+        background-image: url(gti.png);
+        width: 600px;
+        height: 600px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .c2 {
+        background-image: url(supra.png);
+        width: 600px;
+        height: 600px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .c3 {
+        background-image: url(mkz.png);
+        width: 600px;
+        height: 600px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .c4 {
+        background-image: url(teslagrandbasel1.jpg);
+        width: 600px;
+        height: 600px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    caption {
+        font-family: "Saira Stencil One", cursive;
+        font-size: 22px;
+        padding: 20px;
+    }
+
+    .tafla {
+        position: relative;
+    }
+    table {
+        border: 1px solid rgb(124, 124, 124);
+        background-color: #c0c0c0;
+        width: 100%;
+        margin: 0 auto;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+    th {
+        font-size: 22px;
+        border-bottom: 1px solid black;
+    }
+    th td {
+        text-align: center;
+        padding: 8px;
+    }
+
+    tr td {
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        padding: 7.5px;
+    }
+
+    input#takki {
+        display: none;
+    }
+    #bill {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    input#takki {
+        display: none;
+    }
+    input#takki:checked ~ nav {
+        display: block;
+    }
+    nav {
+        margin: auto 0;
+        display: none;
+        max-width: 100%;
+        width: 100%;
+        background-color: rgb(124, 124, 124);
+    }
+
+    #bill {
+        position: absolute;
+        right: 10px;
+        margin: 10px;
+        border: 1px solid black;
+        border-radius: 30px;
+        overflow: visible;
+    }
+
+    ul li {
+        display: block;
+        padding: 5px;
+        text-align: center;
+    }
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        font-family: "Saira Stencil One", cursive;
+    }
+
+    .gallery {
+        background-color: #c0c0c0;
+        margin: 0;
+        min-width: 100%;
+        min-height: 100%;
+        display: inline-grid;
+        justify-content: center;
+    }
+
+    .c1 {
+        background-image: url(gti.png);
+        width: 300px;
+        height: 300px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .c2 {
+        background-image: url(supra.png);
+        width: 300px;
+        height: 300px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .c3 {
+        background-image: url(mkz.png);
+        width: 300px;
+        height: 300px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .c4 {
+        background-image: url(teslagrandbasel1.jpg);
+        width: 300px;
+        height: 300px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    caption {
+        font-family: "Saira Stencil One", cursive;
+        font-size: 22px;
+        padding: 20px;
+    }
+
+    table {
+        border: 0;
+        table-layout: fixed;
+    }
+
+    td {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    tr {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    tr td {
+        font-family: "Montserrat", sans-serif;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(2 0 2 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: 0.8em;
+        text-align: right;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+    }
+}
